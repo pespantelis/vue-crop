@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vue Crop</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Crop directive for Vue.js.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Dosis:300">
+    <link rel="stylesheet" href="css/Jcrop.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1>Vue Crop</h1>
+        <h4>Crop directive for Vue.js</h4>
+
+        <img src="pic.jpg" v-crop="create: test, start: test, move: test, end: test"/>
+
+        <p v-show="coords">{{ coords | json }}</p>
+    </div>
+
+    <script src="js/vue.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/Jcrop.min.js"></script>
+    <script src="js/vue-crop.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
