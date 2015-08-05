@@ -4,6 +4,8 @@
 
 This is a directive for Jcrop 2.0.0.
 
+See a live demo [here](http://pespantelis.github.io/vue-crop/).
+
 ## Usage
 
 ### Include
