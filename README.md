@@ -17,8 +17,9 @@ You can include it with a `<script>` tag when you have Vue itself included globa
 Then you can do this:
 
 ``` html
-<img src="pic.jpg" v-crop="start: cropStart"/>
+<img src="pic.jpg" width="600" height="400" v-crop="start: cropStart"/>
 ```
+> You should specify both the `height` and `width` attributes
 
 See [Jcrop documentation](http://jcrop.org/doc/events) for all available events.
 
