@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -14,6 +15,10 @@ body {
 
 #social iframe {
   margin: 0 4px;
+}
+
+h1, h2, h4 {
+  cursor: default;
 }
 
 h1 {
@@ -34,11 +39,6 @@ h4 {
   font-weight: 400;
   font-size: 15px;
   color: #7f8c8d;
-}
-
-p {
-  font-size: 20px;
-  color: #2c3e50;
 }
 
 .button {

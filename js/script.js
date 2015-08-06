@@ -8,7 +8,7 @@ new Vue({
   el: 'body',
 
   data: {
-    coords: null
+    coords: 'Try to move/resize the selection'
   },
 
   methods: {
