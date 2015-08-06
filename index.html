@@ -15,7 +15,8 @@
         <h1>Vue Crop</h1>
         <h4>Crop directive for Vue.js</h4>
 
-        <img src="pic.jpg" v-crop="create: test, start: test, move: test, end: test"/>
+        <img src="pic.jpg" width="600" height="400"
+             v-crop="create: test, start: test, move: test, end: test"/>
 
         <p v-show="coords">{{ coords | json }}</p>
     </div>
