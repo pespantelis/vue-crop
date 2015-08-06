@@ -23,3 +23,26 @@ p {
   font-size: 20px;
   color: #2c3e50;
 }
+
+.button {
+  display: inline-block;
+  width: 180px;
+  margin: 0.5em;
+  padding: 12px 14px;
+  background-color: #4fc08d;
+  font-family: 'Source Code Pro', Monaco, courier, monospace;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid #3aa373;
+  border-radius: 4px;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.button:hover {
+  background-color: #5dc596;
+  -webkit-transform: translate(0, -2px);
+  -ms-transform: translate(0, -2px);
+  transform: translate(0, -2px);
+}
