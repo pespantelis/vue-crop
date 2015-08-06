@@ -33,11 +33,11 @@
 
         if (this.vm.jcrop) return
 
-        $target = $(this.el)
+        var $wrapper = $(this.el).wrap('<div/>').parent()
 
-        $target.Jcrop(options)
+        $wrapper.width(this.el.width).height(this.el.height)
 
-        this.vm.jcrop = $target.Jcrop('api')
+        this.vm.jcrop = $.Jcrop.attach($wrapper, options)
       },
 
       update: function(callback) {
