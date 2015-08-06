@@ -35,10 +35,14 @@ h2 {
   color: #2c3e50;
 }
 
-h4 {
+h4, a {
   font-weight: 400;
   font-size: 15px;
   color: #7f8c8d;
+}
+
+a {
+  text-decoration: none;
 }
 
 .button {
@@ -48,7 +52,6 @@ h4 {
   padding: 12px 14px;
   background-color: #4fc08d;
   font-weight: 700;
-  text-decoration: none;
   color: #fff;
   border-bottom: 2px solid #3aa373;
   border-radius: 4px;
