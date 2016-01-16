@@ -1,6 +1,6 @@
 # VueCrop
 
-> Crop events plugin for Vue.js
+> Crop events plugin for Vue.js 1.0
 
 This is a directive for Jcrop 2.0.0.
 
@@ -17,7 +17,7 @@ You can include it with a `<script>` tag when you have Vue itself included globa
 Then you can do this:
 
 ``` html
-<img src="pic.jpg" width="600" height="400" v-crop="start: cropStart"/>
+<img src="pic.jpg" width="600" height="400" v-crop:start="cropStart"/>
 ```
 > You should specify both the `height` and `width` attributes
 
