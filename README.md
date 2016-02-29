@@ -8,11 +8,18 @@ See a live demo [here](http://pespantelis.github.io/vue-crop/).
 
 ## Usage
 
-### Include
+### Install via npm
+
+Available through npm as `vue-crop`.
+```
+npm install --save vue-crop
+```
+
+### Direct include
 
 You can include it with a `<script>` tag when you have Vue itself included globally. It will automatically install itself, and will add a global `VueCrop`.
 
-### Use in templates
+## Use in templates
 
 Then you can do this:
 
@@ -23,7 +30,7 @@ Then you can do this:
 
 See [Jcrop documentation](http://jcrop.org/doc/events) for all available events.
 
-### Set options
+## Set options
 
 ``` js
 VueCrop.setOptions({
