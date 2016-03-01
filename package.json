@@ -1,6 +1,6 @@
 {
   "name": "vue-crop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Pantelis Peslis <pespantelis@gmail.com>",
   "license": "MIT",
   "description": "Crop directive for Vue.js",
