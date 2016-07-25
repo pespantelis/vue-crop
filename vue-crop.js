@@ -31,26 +31,26 @@
           return
         }
 
-        if (this.vm.jcrop) return
+        if (this.el.jcrop) return
 
         var $wrapper = $(this.el).wrap('<div/>').parent()
 
         $wrapper.width(this.el.width).height(this.el.height)
 
-        this.vm.jcrop = $.Jcrop.attach($wrapper, options)
+        this.el.jcrop = $.Jcrop.attach($wrapper, options)
       },
 
       update: function(callback) {
-        this.vm.jcrop.container.on('crop' + this.arg, callback)
+        this.el.jcrop.container.on('crop' + this.arg, callback)
       },
 
       unbind: function() {
-        this.vm.jcrop.container.off('crop' + this.arg)
+        this.el.jcrop.container.off('crop' + this.arg)
 
         if (this._watcher.id != 1) return
 
-        this.vm.jcrop.destroy()
-        this.vm.jcrop = null
+        this.el.jcrop.destroy()
+        this.el.jcrop = null
       }
     })
   }
