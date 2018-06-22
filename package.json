@@ -1,19 +1,20 @@
 {
-  "name": "vue-crop",
-  "version": "1.0.1",
-  "author": "Pantelis Peslis <pespantelis@gmail.com>",
+  "name": "vue2-crop",
+  "version": "1.0.0",
+  "author": "Dectinc Chen <npm@dectinc.cc>",
   "license": "MIT",
-  "description": "Crop directive for Vue.js",
+  "description": "Crop directive for Vue.js 2.0",
   "keywords": [
     "vue",
-    "crop"
+    "crop",
+    "vue2"
   ],
-  "main": "vue-crop.js",
+  "main": "vue2-crop.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pespantelis/vue-crop.git"
+    "url": "https://github.com/Dectinc/vue2-crop.git"
   },
-  "bugs": "https://github.com/pespantelis/vue-crop/issues",
+  "bugs": "https://github.com/Dectinc/vue2-crop/issues",
   "homepage": "http://pespantelis.github.io/vue-crop/",
   "dependencies": {
     "vue": "^2.5.2"
