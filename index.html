@@ -3,10 +3,10 @@
 <head>
     <title>Vue Crop</title>
     <meta charset="utf-8">
-    <meta name="description" content="Crop directive for Vue.js.">
+    <meta name="description" content="Crop directive for Vue.js 2.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Dosis:300">
-    <link rel="stylesheet" href="css/Jcrop.min.css">
+    <link rel="stylesheet" href="css/jquery.Jcrop.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,28 +14,32 @@
     <div id="container">
         <h1>Vue Crop</h1>
         <h4>Crop directive for Vue.js</h4>
+        <h4>You have to run this demo with a browser which supports ES6</h4>
 
-        <a href="https://github.com/pespantelis/vue-crop" class="button">Source on GitHub</a>
+        <a href="https://github.com/pespantelis/vue-crop" class="button">Source for Vue.js 1.0</a>
+        <a href="https://github.com/Dectinc/vue2-crop" class="button">Source on GitHub</a>
 
         <div id="social">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-text="VueCrop - A @vuejs directive for image cropping" data-via="pespantelis">Tweet</a>
-            <iframe src="https://ghbtns.com/github-btn.html?user=pespantelis&repo=vue-crop&type=star&count=true" frameborder="0" scrolling="0" width="78px" height="20px"></iframe>
+            <a href="https://twitter.com/share" class="twitter-share-button"
+               data-text="Vue2Crop - A @vuejs directive for image cropping" data-via="dectinc">Tweet</a>
+            <iframe src="https://ghbtns.com/github-btn.html?user=Dectinc&repo=vue2-crop&type=star&count=true"
+                    frameborder="0" scrolling="0" width="78px" height="20px"></iframe>
         </div>
 
         <h2 v-text="coords|json"></h2>
 
         <img src="pic.jpg" width="600" height="400"
-             v-crop:create="test" v-crop:start="test" v-crop:move="test" v-crop:end="test"/>
+             v-crop:select="test"/>
 
-        <a href="https://github.com/pespantelis/vue-crop/tree/gh-pages" style="float:right">source</a>
+        <a href="https://github.com/Dectinc/vue2-crop/tree/gh-pages-vue2" style="float:right">source</a>
     </div>
 
     <script src="js/vue.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/Jcrop.min.js"></script>
-    <script src="js/vue-crop.js"></script>
+    <script src="js/jquery.color.js"></script>
+    <script src="js/jquery.Jcrop.min.js"></script>
+    <script src="js/vue2-crop.js"></script>
     <script src="js/script.js"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
 </body>
 </html>
