@@ -16,6 +16,6 @@
   "bugs": "https://github.com/pespantelis/vue-crop/issues",
   "homepage": "http://pespantelis.github.io/vue-crop/",
   "dependencies": {
-    "vue": "^1.0.0"
+    "vue": "^2.5.2"
   }
 }
