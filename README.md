@@ -27,7 +27,7 @@ npm install --save vue2-crop
 
 Use this directive in `main.js`
 
-``` vuejs
+``` js
 import Vue2Crop from 'vue2-crop'
 
 Vue2Crop.setOptions({
