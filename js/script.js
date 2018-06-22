@@ -1,8 +1,10 @@
-VueCrop.setOptions({
+Vue2Crop.setOptions({
   setSelect: [25, 25, 250, 250],
-  aspectRatio: 1,
-  bgColor: '#2C7152'
-});
+  bgOpacity: 0.6,
+  allowResize: true,
+  allowMove: true,
+  allowSelect: true
+})
 
 new Vue({
   el: 'body',
