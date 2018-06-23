@@ -12,38 +12,47 @@ var events = [
   'remove'
 ]
 
+const initJCrop = function (el, binding, vnode, last) {
+  if (last && last.jcrop) {
+    if (last.elm !== vnode.elm) {
+      last.jcrop.destroy()
+      last.jcrop = null
+    } else {
+      vnode.jcrop = last.jcrop
+      last.jcrop = null
+      return
+    }
+  }
+  let event = binding.arg
+
+  if ($.inArray(event, events) === -1) {
+    console.warn('Invalid v-crop event: ' + event)
+    return
+  }
+
+  if (!vnode.jcrop) {
+    vnode.jcrop = $.Jcrop(el, defaultOptions)
+  }
+  let updatedOptions = {}
+  if (event === 'select') {
+    updatedOptions.onSelect = binding.value
+  }
+  vnode.jcrop.setOptions(updatedOptions)
+  vnode.jcrop.release()
+}
+
 Vue2Crop.install = function (Vue) {
   Vue.directive('crop', {
 
     acceptStatement: true,
 
-    bind: function (el, binding, vnode) {
+    inserted(el, binding, vnode) {
+      initJCrop(el, binding, vnode, null)
     },
 
-    update: function (el, binding, vnode, last) {
-      if (last && last.jcrop) {
-        last.jcrop.destroy()
-        last.jcrop = null
-      }
-      let event = binding.arg
+    update: initJCrop,
 
-      if ($.inArray(event, events) === -1) {
-        console.warn('Invalid v-crop event: ' + event)
-        return
-      }
-
-      if (!vnode.jcrop) {
-        vnode.jcrop = $.Jcrop(el, defaultOptions)
-      }
-      let updatedOptions = {}
-      if (event === 'select') {
-        updatedOptions.onSelect = binding.value
-      }
-      vnode.jcrop.setOptions(updatedOptions)
-      vnode.jcrop.release()
-    },
-
-    unbind: function (el, binding, vnode) {
+    unbind(el, binding, vnode) {
       if (!vnode.jcrop) {
         return
       }
